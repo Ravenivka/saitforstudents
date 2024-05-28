@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: grey;
+}
+a {
+    text-decoration: none;
+}
+.yellowtail-regular {
+    font-family: "Yellowtail", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+.amatic-sc-regular {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .amatic-sc-bold {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+.holder {
+    width: 1600px;
+    height: 1024px;
+    background-image: url(img/Rectangle\ 1.png);
+    margin-left: calc(50% - 800px);
+
+}
+.header{
+    width: 100%;
+    height: 175px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: #F9F3BC;
+    opacity: 0.5;
+}
+.himg {
+    width: 910px;
+    height: 170px;
+}
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.mimg {
+    width: 601px;
+    height: 708px;
+}
+.imgmain{
+    width: 100%;
+    height: 100%;
+}
+.mtext{
+    width: 999px;
+    height: 708px;    
+    font-size: 88px;
+    color: #FEFE07;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.mtext a{    
+    color: #FEFE07;
+}
+.li1:hover {
+    color:red;
+}
+.li2:hover {
+    color:red;
+}
+.mtext a:hover{    
+    color: red;
+}
+.footer{
+    width: 100%;
+    height: 140px;    
+    color: #FEFE07;
+    font-size: 40pt;
+    text-align: center;
+}
+.footer a{
+    color: #FEFE07;
+}
