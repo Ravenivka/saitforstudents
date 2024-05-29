@@ -26,10 +26,12 @@ a {
   }
 .holder {
     width: 1600px;
-    height: 1024px;
+    min-height: 1024px;
     background-image: url(img/Rectangle\ 1.png);
     margin-left: calc(50% - 800px);
-
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
 }
 .header{
     width: 100%;
@@ -80,13 +82,39 @@ a {
 .mtext a:hover{    
     color: red;
 }
-.footer{
-    width: 100%;
-    height: 140px;    
+.footer{    
+    width: 100%;      
     color: #FEFE07;
     font-size: 40pt;
     text-align: center;
 }
 .footer a{
     color: #FEFE07;
+}
+
+@media (max-width: 1599px){
+    .holder { width: 1024px; margin-left: calc(50% - 512px); min-height: 890px;}
+    .mimg { width: 384px; height: 452px;}    
+    .mtext {font-size: 40pt; height: 452px; width: 640px;}
+    .footer {font-size: 24pt; }
+}
+@media (max-width: 1023px){
+    .holder { width: 800px; margin-left: calc(50% - 400px); min-height: 600px;}
+    .mimg { width: 300px; height: 354px;}    
+    .mtext {font-size: 32pt; height: 354px; width: 500px;}
+    .footer {font-size: 20pt; }
+    .himg {
+        width: 800px;
+        height: 150px;
+    }
+}
+    @media (max-width: 800px){
+        .holder { width: 320px; margin-left: calc(50% - 160px); }
+        .mimg { width: 0px; height: 0px; visibility: hidden;}    
+        .mtext {font-size: 20pt; height: 354px; width: 100%;}
+        .footer {font-size: 20pt; }
+        .himg {
+            width: 320px; 
+            height: 60px;           
+        }
 }
