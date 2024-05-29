@@ -26,13 +26,16 @@ a {
   }
 .holder {
     width: 1600px;
-    min-height: 1024px;
+    min-height: 1024px;    
+    margin-left: calc(50% - 800px);    
+}
+.placer{
     background-image: url(img/Rectangle\ 1.png);
-    margin-left: calc(50% - 800px);
     display: flex;
     align-content: space-between;
     flex-wrap: wrap;
 }
+
 .header{
     width: 100%;
     height: 175px;
@@ -48,9 +51,13 @@ a {
     height: 170px;
 }
 .main{
-    width: 100%;
+    width: 100%;  
+    background-color: white;  
+}
+.main-placer{
     display: flex;
     justify-content: space-around;
+    background: none;
 }
 .mimg {
     width: 601px;
@@ -91,6 +98,26 @@ a {
 .footer a{
     color: #FEFE07;
 }
+.main-pad {text-align: justify; }
+.main-pad p { margin-left: 1%; margin-right: 1%;}
+.main-pad h1 { margin-left: 1%; margin-right: 1%;}
+.main-pad h2 { margin-left: 1%; margin-right: 1%;}
+.main-pad h3 { margin-left: 1%; margin-right: 1%;}
+.ol {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.svg {
+    width: 20px;
+    height: 20px;   
+}
+.si-glyph-fill {
+    fill: blueviolet;
+}
+.svg:hover path {
+     fill: greenyellow; 
+}
+
 
 @media (max-width: 1599px){
     .holder { width: 1024px; margin-left: calc(50% - 512px); min-height: 890px;}
